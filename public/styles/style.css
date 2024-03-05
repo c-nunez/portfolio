@@ -1,0 +1,68 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #00750a, #00bbff, #23d5ab);
+	background-size: 400% 400%;
+    background-attachment: fixed;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+/* background gradient animation */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.svg_white {
+    fill: #fff;
+}
+
+
+@media (max-width: 576px) { 
+    .rounded-4 {       
+        border-radius: 0 !important;
+    }
+    div.bg-dark {
+      background-color: transparent !important;
+    }
+    img {
+      width: 200px !important;
+    }
+    #tophero {
+      display: flex;
+      justify-content: end;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar:hover {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    opacity: 50%;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

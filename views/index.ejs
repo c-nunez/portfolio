@@ -1,17 +1,126 @@
 <%- include("partials/header.ejs") %>
 
-<div class="container row px-4 mx-auto">
-    <div class="row flex-lg-row-reverse align-items-center g-3 py-5">
-    <div class="col-10 col-sm-8 col-lg-6">
-        <img src="/images/profile-pic.jpg" class="d-block mx-lg-auto img-fluid border-1 rounded-3" width="700" height="500" loading="lazy">
-    </div>
-    <div class="col-lg-6 frontlead">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Cristian Nunez</h1>
-        <p class="lead fs-6">I tell computers to do things;<br>Sometimes they listen; <br> Sometimes they don't;</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+<div  class="container row px-4 mx-auto">
+
+    <div id="home" class="row flex-lg-row-reverse g-3 py-5">
+        <div class="col-10 col-sm-10 col-lg-6">
+            <img src="/images/profile-pic.jpg" class="d-block mx-lg-auto img-fluid border-1 rounded-3" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6 frontlead">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Cristian Nunez</h1>
+            <p class="lead fs-6">I tell computers to do things;<br>Sometimes they listen; <br> Sometimes they don't;</p>
         </div>
     </div>
+
+    <div id="about">
+        <div>
+            <h2 class="pb-2">About me</h2>
+            <p class="lead fs-6">
+                I started my journey into the world of coding at an early age, in the times of 56kb dial-up and 
+                asking Jeeves everything instead of using Google. My inspiration came from wanting (and miserably failing) 
+                to hack Diabo II to duplicate valuable items to trade for better gear. 
+                <br/>
+                I thought, "Well everyone's doing it, so how hard could it be?". 
+                <br>
+                <br>
+                Boy. Was. I. Wrong.
+                <br>
+                <br>
+                On the bright side, it took me on a journey into the endless world of coding, from simple Javascript 
+                games to more complex fullstack web apps and hopefully (one day) enterprise solutions.
+                </p> 
+        </div>
+        <div>
+            <h2 class="mb-3 mt-5">Proficiencies</h2>
+            <div class="row g-3">
+                <div class="col">
+                    <img src="/images/html.svg" height="75px">
+                </div>
+                <div class="col">
+                    <img src="/images/css.svg" height="75px">
+                </div>
+                <div class="col">
+                    <img src="/images/javascript.svg" height="75px">
+                </div>
+                <div class="col">
+                    <img src="/images/node.svg" height="75px">
+                </div>
+                <div class="col">
+                    <img src="/images/nginx.svg" height="75px">
+                </div>
+                <div class="col">
+                    <img src="/images/ejs.svg" height="75px">
+                </div>
+                <div class="col">
+                    <img src="/images/ubuntu.svg" height="75px">
+                </div>
+
+            </div>
+        </div>
     </div>
+
+    <div id="projects">   
+        <h2 class="pb-2">Projects</h2>
+        <div class="row g-3">
+            <div class="col-sm">
+                <div class="card" style="width: 20rem;">
+                    <img src="images/rpi.png" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Pi-Napple Server</h5>
+                    <p class="card-text">"Pi-Napple" is an off-cloud server solution powered by Ubuntu Server on a Raspberry Pi 5! 
+                        The project utilizes the robust combination of NodeJS and ExpressJS running on NGINX, and will host future projects.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Ubuntu</li>
+                        <li class="list-group-item">Raspberry Pi 5</li>
+                        <li class="list-group-item">NGINX</li>
+                        <li class="list-group-item">NodeJS</li>
+                        <li class="list-group-item">ExpressJS</li>
+                    </ul>
+                    <a href="https://rpi.cristiannunez.ca" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://placehold.co/600x400?text=Coming+soon" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Str8 Pick-Em's</h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a class="btn btn-tertiary disabled placeholder col-6" aria-disabled="true"></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://placehold.co/600x400?text=Coming+soon" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a class="btn btn-tertiary disabled placeholder col-6" aria-disabled="true"></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>
+
 
 </div>
 

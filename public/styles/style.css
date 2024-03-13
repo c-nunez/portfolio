@@ -4,12 +4,27 @@
   font-family: 'Source Code Pro', monospace;
 }
 
-/* .stage {
-  display: flex;
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#home {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-} */
+}
+
+#about {
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+
+#projects {
+
+  padding-top: 4rem;
+  min-height: 100vh;
+
+}
 
 .svg_white {
     fill: #fff;
@@ -17,17 +32,12 @@
 
 
 @media (max-width: 576px) { 
-    .rounded-4 {       
-        border-radius: 0 !important;
-    }
-    div.bg-dark {
-      background-color: transparent !important;
-    }
-    img {
+    /* img {
       width: 200px !important;
-    }
-    #tophero {
-      display: flex;
+    } */
+
+    #home {
+      /* display: flex; */
       justify-content: end;
       margin-right: 0px;
       padding-right: 0px;
@@ -35,5 +45,6 @@
 }
 
 .bottomblur {
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }

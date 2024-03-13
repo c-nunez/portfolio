@@ -33,3 +33,7 @@
       padding-right: 0px;
     }
 }
+
+.bottomblur {
+  backdrop-filter: blur(3px);
+}

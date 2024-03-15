@@ -11,48 +11,55 @@
             <p class="lead fs-6">I tell computers to do things; <br>Sometimes they listen; <br> Sometimes they don't;</p>
         </div>
     </div>
-
+    
     <div id="about">
-        <div>
+        <div class="row flex-lg">
             <h2 class="pb-2">About me</h2>
-            <p class="lead fs-6">
+<pre class="text-secondary col-lg-5">
+function describePerson(name) {                 
+    const interests = [
+    "football", 
+    "Formula 1", 
+    "travelling the world", 
+    "craft beer"
+    ]; 
 
-                <p>
-                    Hello there! I'm Cristian, and I'm thrilled to welcome you to my corner of the web. I'm a passionate digital explorer with a flair for creativity and a touch of nostalgia for the late '90s internet era.
-                </p>
-                <p>
-                    Back in the late '90s, when Ask Jeeves was our go-to search engine and Neopets were our virtual companions, I found myself captivated by the endless possibilities of the digital world. It was a time when the internet was still in its infancy, and we navigated it with a sense of wonder and curiosity that's hard to replicate today.
-                </p>
-                <p>
-                    One of my most cherished memories from that era was the thrill of trying to hack Diablo 1. It wasn't about cheating the system; it was about pushing the boundaries of what was possible and diving deep into the game's mechanics. Diablo 1 was not just a game to me; it was an inspiration. It fueled my curiosity and set me on a path of exploration that I continue to walk today.
-                </p>
-                <p>
-                    Fast forward to today, and I've turned that passion for exploration into a career. I'm a web developer and a creator who revels in the beauty of the online world. My work is a blend of modern innovation and a heartfelt nod to the golden age of the internet. I strive to capture the essence of that era's creativity, weaving it into the websites and digital experiences I craft.
-                </p>
+    let description = `Hi, I'm ${name}.`;
+    description += "I enjoy "; 
+    for (let i = 0; i < interests.length; i++) { 
+        if (i === interests.length - 1 && i !== 0) { 
+            description += "and "; 
+        } 
+        description += interests[i]; 
+        if (i !== interests.length - 1) { 
+            description += ", "; 
+        } 
+    } 
+    description += "."; 
 
-                <!-- function describePerson(name) { <br><br>
+    return description; 
+} 
 
-                    const interests = ["football", "Formula 1", "travelling the world", "craft beer"]; <br><br>
-                
-                    let description = `Hi, I'm ${name}. `;<br>
-                    description += "I enjoy "; <br>
-                    for (let i = 0; i < interests.length; i++) { <br>
-                        if (i === interests.length - 1 && i !== 0) { <br>
-                            description += "and "; <br>
-                        } <br>
-                        description += interests[i]; <br>
-                        if (i !== interests.length - 1) { <br>
-                            description += ", "; <br>
-                        } <br>
-                    } <br>
-                    description += "."; <br><br>
-                
-                    return description; <br>
-                } <br><br>
-                
-                console.log(describePerson("Cristian")); <br> -->
+console.log(describePerson("Cristian")); 
+</pre>
+            <div class="col-lg-6">
+                <p class="lead fs-6">
+                    
+                    <p>
+                        Hello there! I'm Cristian, and I'm thrilled to welcome you to my corner of the web. I'm a passionate digital explorer with a flair for creativity and a touch of nostalgia for the late '90s internet era.
+                    </p>
+                    <p>
+                        Back in the late '90s, when Ask Jeeves was our go-to search engine and Neopets were our virtual companions, I found myself captivated by the endless possibilities of the digital world. It was a time when the internet was still in its infancy, and we navigated it with a sense of wonder and curiosity that's hard to replicate today.
+                    </p>
+                    <p>
+                        One of my most cherished memories from that era was the thrill of trying to hack Diablo 1. It wasn't about cheating the system; it was about pushing the boundaries of what was possible and diving deep into the game's mechanics. Diablo 1 was not just a game to me; it was an inspiration. It fueled my curiosity and set me on a path of exploration that I continue to walk today.
+                    </p>
+                    <p>
+                        Fast forward to today, and I've turned that passion for exploration into a career. I'm a web developer and a creator who revels in the beauty of the online world. My work is a blend of modern innovation and a heartfelt nod to the golden age of the internet. I strive to capture the essence of that era's creativity, weaving it into the websites and digital experiences I craft.
+                    </p>
+                </p> 
 
-            </p> 
+            </div>
         </div>
         <div>
             <h2 class="mb-3 mt-5">Proficiencies</h2>
@@ -73,15 +80,14 @@
                     <img src="/images/nginx.svg" height="75px">
                 </div>
                 <div class="col">
-                    <img src="/images/ejs.svg" height="75px">
+                    <img src="/images/ubuntu.svg" height="75px">
                 </div>
                 <div class="col">
-                    <img src="/images/ubuntu.svg" height="75px">
+                    <img src="/images/ejs.svg" height="75px">
                 </div>
                 <div class="col">
                     <img src="/images/github.svg" height="75px">
                 </div>
-
             </div>
         </div>
     </div>

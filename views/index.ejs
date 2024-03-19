@@ -1,8 +1,9 @@
 <%- include("partials/header.ejs") %>
 
+<main class="mb-5">
 <div  class="container row px-4 mx-auto">
 
-    <div id="home" class="row flex-lg-row-reverse g-3 py-5">
+    <div id="home" class="row flex-lg-row-reverse g-3">
         <div class="col-10 col-sm-10 col-lg-6">
             <img src="/images/profile-pic.jpg" class="d-block mx-lg-auto img-fluid border-1 rounded-3" width="700" height="500" loading="lazy">
         </div>
@@ -88,6 +89,9 @@ console.log(describePerson("Cristian"));
                 <div class="col">
                     <img src="/images/github.svg" height="75px">
                 </div>
+                <div class="col">
+                    <img src="/images/bootstrap.svg" height="75px">
+                </div>
             </div>
         </div>
     </div>
@@ -102,14 +106,11 @@ console.log(describePerson("Cristian"));
                     <h5 class="card-title">Pi-Napple Server</h5>
                     <p class="card-text">"Pi-Napple" is an off-cloud server solution powered by Ubuntu Server on a Raspberry Pi 5! 
                         The project utilizes the robust combination of NodeJS and ExpressJS running on NGINX, and will host future projects.</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Ubuntu</li>
-                        <li class="list-group-item">Raspberry Pi 5</li>
-                        <li class="list-group-item">NGINX</li>
-                        <li class="list-group-item">NodeJS</li>
-                        <li class="list-group-item">ExpressJS</li>
-                    </ul>
                     <a href="https://rpi.cristiannunez.ca" class="btn btn-primary">Open</a>
+                    <a href="https://github.com/c-nunez/pifive.git" class="btn btn-outline-secondary">
+                        <img src="/images/github.svg" height="20px">                        
+                    </a>
+
                     </div>
                 </div>
             </div>
@@ -118,15 +119,15 @@ console.log(describePerson("Cristian"));
                 <div class="card" style="width: 20rem;">
                     <img src="https://placehold.co/600x400?text=Coming+soon" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Str8 Pick-Em's</h5>
+                        <h5 class="card-title">Capstone Project: Blog</h5>
                         <p class="card-text placeholder-glow">
-                            <span class="placeholder col-7"></span>
-                            <span class="placeholder col-4"></span>
-                            <span class="placeholder col-4"></span>
-                            <span class="placeholder col-6"></span>
-                            <span class="placeholder col-8"></span>
+                            This project is to show basic functionality of a blog app with no database.
                         </p>
-                        <a class="btn btn-tertiary disabled placeholder col-6" aria-disabled="true"></a>
+                        <a href="#" class="btn btn-primary">Open</a>
+
+                        <a href="https://github.com/c-nunez/capstone-proj-blog.git" class="btn btn-outline-secondary">
+                            <img src="/images/github.svg" height="20px">                        
+                        </a>
                     </div>
                 </div>
             </div>

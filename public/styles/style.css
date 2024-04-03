@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 .frontlead {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 body::-webkit-scrollbar {
@@ -20,31 +20,48 @@ body::-webkit-scrollbar {
 }
 
 #projects {
-
   padding-top: 4rem;
-  min-height: 100vh;
-
+  min-height: 95vh;
 }
 
 .svg_white {
-    fill: #fff;
+  fill: #fff;
 }
 
-
-@media (max-width: 576px) { 
-    /* img {
+@media (max-width: 576px) {
+  /* img {
       width: 200px !important;
     } */
 
-    #home {
-      /* display: flex; */
-      justify-content: end;
-      margin-right: 0px;
-      padding-right: 0px;
-    }
+  #home {
+    /* display: flex; */
+    justify-content: end;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
 }
 
 .bottomblur {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
+}
+
+#prof-pic {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#name {
+  animation: name 8s infinite;
+}
+
+@keyframes name {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }

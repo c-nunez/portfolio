@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+:root {
+  --_fw-900: 900;
+  --_fw-700: 700;
+  --_fw-400: 400;
+
+  --_clr-900: hsl(0, 0%, 100%);
+  --_clr-700: hsl(0, 0%, 80%);
+  --_clr-400: hsl(0, 0%, 60%);
+}
+
 .frontlead {
   font-family: "Source Code Pro", monospace;
 }
@@ -51,7 +61,41 @@ body::-webkit-scrollbar {
 }
 
 #name {
-  animation: name 8s infinite;
+  font-size: clamp(1rem, calc(1rem + 2.5vw), 3rem);
+  color: hsl(0, 0%, 50%);
+  user-select: none;
+
+  &.split-text {
+    display: inline-flex;
+  }
+
+  & .split-char {
+    font-weight: 200;
+    transition: font-weight 0.5s ease;
+
+    &:hover {
+      font-weight: var(--_fw-900);
+      color: var(--_clr-900);
+    }
+
+    &:hover + .split-char {
+      font-weight: var(--_fw-700);
+      color: var(--_clr-700);
+    }
+    &:hover + .split-char + .split-char {
+      font-weight: var(--_fw-400);
+      color: var(--_clr-400);
+    }
+
+    &:has(+ .split-char:hover) {
+      font-weight: var(--_fw-700);
+      color: var(--_clr-700);
+    }
+    &:has(+ .split-char + .split-char:hover) {
+      font-weight: var(--_fw-400);
+      color: var(--_clr-400);
+    }
+  }
 }
 
 @keyframes name {
